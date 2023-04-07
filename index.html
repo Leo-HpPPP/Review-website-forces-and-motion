@@ -45,16 +45,25 @@
         width: 50%;
       }
     </style>
-    <nav>
-      <ul>
-        <li><a class="nav-link nav-home">Home</a>
-        <li><a class="nav-link nav-aboutUs">About Us</a></li>
-        <li><a class="nav-link nav-NuclearFission">Nuclear Fission</a></li>
-        <li><a class="nav-link nav-NuclearFusion">Nuclear Fusion</a></li>
-        <li><a class="nav-link nav-WorkCited">Work Cited</a></li>
-      </ul>
-    </nav>
+    <div id="nav-wrapper">
+      <nav>
+        <ul>
+          <li><a class="nav-link nav-home">Home</a>
+          <li><a class="nav-link nav-aboutUs">About Us</a></li>
+          <li><a class="nav-link nav-NuclearFission">Nuclear Fission</a></li>
+          <li><a class="nav-link nav-NuclearFusion">Nuclear Fusion</a></li>
+          <li><a class="nav-link nav-WorkCited">Work Cited</a></li>
+        </ul>
+      </nav>
+    </div>
     <style>
+      #nav-wrapper {
+      position: -webkit-sticky;
+      position: sticky;
+      top: 0;
+      padding: 10px;
+      font-size: 25px;
+      }
       nav {
         background-color: #6962a8;
         padding: 10px 20px;
