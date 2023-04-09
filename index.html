@@ -2,9 +2,37 @@
 <html>
   <head>
     <link rel="stylesheet" href="index.css">
+    <div id="topNavBar">
+      <p id="hovertext">hover at top for page and link menu</p>
+      <div class="topnav">
+        <div onclick="openNav()">
+          <img class="menu-icon"></img>
+          <img class="menu-icon"></img>
+          <img class="menu-icon"></img>
+        </div>
+        <div id="white-square"></div>
+        <a href="#title" class="navlink">Title</a> <span class="seperator">></span><a href="#intro" class="navlink">Introduction</a> <span class="seperator">></span><a href="#nukes"  class="navlink">Nuclear fission in nukes</a> <span class="seperator">></span><a href="#uses" class="navlink">Uses</a> <span class="seperator">></span><a href="#issues" class="navlink">Problems</a> <span class="seperator">></span><a href="#emc" class="navlink">E=MC^2</a> <span class="seperator">></span><a href="#extra" class="navlink">Extra</a>
+      </div>
+    </div>
   </head>
   <body>
     <style>
+      #topNavBar {
+        overflow: hidden;
+        position: relative;
+        text-align: right;
+      }
+      .topnav {
+        background: lightcoral;
+        display: none;
+        transition: 1s;
+      }
+      #topNavBar:hover .topnav {
+        display:block;
+      }
+      #topNavBar:hover #hovertext{
+        display:none;
+      }
       body {
         background: lightblue;
         font-family: cursive;
@@ -44,80 +72,118 @@
         margin-right: auto;
         width: 50%;
       }
+      .menu-icon {
+        width: 35px;
+        height: 5px;
+        background-color: black;
+        margin: 6px 0;
+      }
     </style>
-    <div id="nav-wrapper">
-      <nav>
-        <ul>
-          <li><a class="nav-link nav-home">Home</a></li>
-          <li><a class="nav-link nav-aboutUs">About Us</a></li>
-          <li><a class="nav-link nav-NuclearFission">Nuclear Fission</a></li>
-          <li><a class="nav-link nav-NuclearFusion">Nuclear Fusion</a></li>
-          <li><a class="nav-link nav-WorkCited">Work Cited</a></li>
-        </ul>
-      </nav>
-    </div>
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">Home</a>
+        <a href="#">About Us</a>
+        <a href="#">Nuclear Fission</a>
+        <a href="#">Nuclear Fusion</a>
+      </div>
+
     <style>
-      #nav-wrapper {
-      position: -webkit-sticky;
-      position: sticky;
-      top: 0;
-      padding: 10px;
-      font-size: 25px;
-      }
-      nav {
-        background-color: #6962a8;
-        padding: 10px 20px;
-        text-align: center;
-      }
-      ul {
-        list-style: none;
-        margin: 0;
-        padding: 0;
-      }
-      li {
-        display: inline-block;
-      }
-      .nav-link {
-        color: #ffffff;
-        display: block;
-        font-weight: bold;
-        padding: 15px;
-        text-decoration: underline;
-        text-transform: uppercase;
-      }
-      .nav-home {
-        background-color: red;
-      }
-      .nav-aboutUs {
-        background-color: purple;
-      }
-      .nav-NuclearFission {
-        background-color: #03a9f4;
-      }
-      .nav-NuclearFusion {
-        background-color: #43a347;
-      }
-      .nav-WorkCited {
-        background-color: #ff9b17;
-      }
+      #topNavBar {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  padding: 0px;
+  font-size: 25px;
+  margin: 0px;
+  left: 0px;
+  text-align: right;
+}
+.navlink {
+  text-align: center;
+}
+nav {
+  text-align: center;
+}
+      /* The side navigation menu */
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #111; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+#main {
+  transition: margin-left .5s;
+  padding: 20px;
+}
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+.navlink {
+  margin-top: 40px;
+  padding-top: -40px;
+}
     </style>
+  <div id="main">
+    <section id="title" class="sections">
     <h1>Nuclear Fission</h1>
     <h2 align="center">By Neveel Chheda</h2>
     <hr>
+    </section>
+    <section id="intro" class="sections">
     <h3>Introduction</h3>
     <p>Nuclear fission happens when a neutron slams into another atom, forcing it to split into two smaller atoms. These two atoms are caled fission products. There are more neutrons that are produced, creating a chain reaction. When this happens it releases a lot of energy.</p>
     <hr>
+    <section id="image">
     <img src="nerdlololol.png" alt="Nuclear Fission" length="50%" width="50%">
     <hr>
+    </section>
+    <section id="nukes" class="sections">
     <h3>Nuclear fission in nukes</h3>
     <p>Scientists put the ingridents to create a nuclear fission scenario in nukes, and when the nuke is detonated, the fission occurs releasing massive amounts of energy in the form of x-ray's and gamma rays, which make a lot of heat. It also creates pressure for nuclear fusion.</p>
     <hr>
+    </section>
+    <section id="uses" class="sections">
     <h3>Uses of nuclear fission</h3>
     <p>Nuclear fission is usually used in nuclear power plants to create electricity. This energy produced, which fission creates, is used to do things that need electricity. It can also power turbines to generate more electricity, in the way that windmills create electricity.</p>
     <hr>
+    </section>
+    <section id="issues" class="sections">
     <h3>Environmental issues</h3>
     <p>Nuclear fission produces nuclear waste, which is deadly. It is hard to dispose of this waste, creating problems. If there is a nuclear meltdown, many people will die, in painful ways.</p>
     <hr>
+    </section>
+    <section id="emc" class="sections">
     <h3>E=MC^2</h3>
     <p>You may have heard of this equation but what does it really mean? <br> </p>
     <p>The "E" stands for energy. <br></p>
@@ -127,9 +193,83 @@
     <br>
     <p>It states that the increased relativistic mass of a body, multiplied by the speed of light squared, is equal to the kinetic energy of that object.</p>
     <hr>
+    </section>
+    <section id="extra" class="sections">
     <h5>Just so you know, the increased relativistic mass means that as the speed of an object increases, its observed mass increases, an as an object approches the speed of light, its observed mass becomes infinitely large.</h5>
     <h5>As an object approaches the speed of light, its kinetic energy becomes infinite, meaning that the mass of an object also is infinite.</h5>
     <h6>This concept is very difficult to grasp and I am also too dumb to truly understand it, so don't think bad of yourselves if you do not understand it/.</h6>
     <hr>
+    </section>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  </div>
   </body>
+  <script>
+    /* Set the width of the side navigation to 250px and the left margin of the page content to 250px and add a black background color to body */
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+  document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+}
+
+/* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft = "0";
+  document.body.style.backgroundColor = "lightblue";
+}
+var title = document.getElementById("title").offsetTop;
+var section1 = document.getElementById("intro").offsetTop;
+var imgsection = document.getElementById("image").offsetTop;
+var section2 = document.getElementById("nukes").offsetTop;
+var section3 = document.getElementById("uses").offsetTop;
+console.log(section3);
+var section4 = document.getElementById("issues").offsetTop;
+var section5 = document.getElementById("emc").offsetTop;
+var section6 = document.getElementById("extra").offsetTop;
+var scrollTop = (window.pageYOffset !== undefined) ? window.pageYOffset : (document.documentElement || document.body.parentNode || document.body).scrollTop;
+function scrollcheck(){
+  const boxes = document.querySelectorAll('.navlink');
+  var scrollTop = (window.pageYOffset !== undefined) ? window.pageYOffset : (document.documentElement || document.body.parentNode || document.body).scrollTop;
+  console.log(scrollTop);
+  if(scrollTop+10 > section1 && scrollTop+10 < section2){
+
+  boxes.forEach(box => {
+    box.style.color = 'blue';
+  });
+    document.getElementsByClassName("navlink")[1].style.color = "#FFFFFF";
+  }
+  else if(scrollTop +10 > section2 && scrollTop+10  < section3){
+    boxes.forEach(box => {
+    box.style.color = 'blue';
+  });
+    document.getElementsByClassName("navlink")[2].style.color = "#FFFFFF";
+  }
+  else if(scrollTop+10 > section3 && scrollTop+10 < section4){
+    boxes.forEach(box => {
+    box.style.color = 'blue';
+  });
+    document.getElementsByClassName("navlink")[3].style.color = "#FFFFFF";
+  } 
+  else if(scrollTop+10 > section4 && scrollTop+10 < section5){
+    boxes.forEach(box => {
+    box.style.color = 'blue';
+  });
+    document.getElementsByClassName("navlink")[4].style.color = "#FFFFFF";
+  }
+  else if(scrollTop+10 > section5 && scrollTop+10 < section6){
+    boxes.forEach(box => {
+    box.style.color = 'blue';
+  });
+    document.getElementsByClassName("navlink")[5].style.color = "#FFFFFF";
+  }
+  else if(scrollTop+10 > section5 ){
+    boxes.forEach(box => {
+    box.style.color = 'blue';
+  });
+    document.getElementsByClassName("navlink")[6].style.color = "#FFFFFF";
+  }
+  setTimeout(scrollcheck, 10);
+}
+scrollcheck()
+  </script>
 </html>
