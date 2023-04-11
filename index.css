@@ -134,3 +134,8 @@ padding: 20px;
 margin-top: 40px;
 padding-top: -40px;
 }
+hr {
+    border-top: 4px solid orange;
+    border-bottom: 4px solid blue;
+    border-radius: 15px;
+}
