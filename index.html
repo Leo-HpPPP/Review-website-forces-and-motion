@@ -1,169 +1,95 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <!--<link rel="stylesheet" href="fission.css">-->
-    <div id="topNavBar">
-      <p> </p>
-      <div class="topnav">
-        <div onclick="openNav()">
-          <div class="menu-icon"></div>
-          <div class="menu-icon"></div>
-          <div class="menu-icon"></div>
-        </div>
-        <a href="#title" class="navlink">Title</a> <span class="seperator">></span><a href="#intro" class="navlink">Introduction</a> <span class="seperator">></span><a href="#nukes"  class="navlink">Nuclear fission in nukes</a> <span class="seperator">></span><a href="#uses" class="navlink">Uses</a> <span class="seperator">></span><a href="#issues" class="navlink">Enviormental Issues</a> <span class="seperator">></span><a href="#emc" class="navlink">E=MC^2</a> <span class="seperator">></span><a href="#extra" class="navlink">Extra</a>
-      </div>
-    </div>
-  </head>
+  <nav>
+    <li><a href="index.html" class="nav-link nav-home">Home</a></li>
+    <li><a href="aboutUs.html" class="nav-link nav-aboutUs">About Us</a></li>
+    <li><a href="nuclearFission.html" class="nav-link nav-nuclearFission">Nuclear Fission</a></li>
+    <li><a href="nuclearFusion.html" class="nav-link nav-nuclearFusion">Nuclear Fusion</a></li>
+    <li><a href="workCited.html" class="nav-link nav-workCited">Work Cited</a></li>
+  </nav>
   <style>
-    #topNavBar {
-overflow: auto;
-position: relative;
-text-align: right;
-white-space: nowrap;
-height: auto;
-}
-.topnav {
-margin-top: -105px;
-background: lightcoral;
-height: 100px;
-transition: 1s;
-z-index: 1;
-position: relative;
-}
-
-#topNavBar:hover .topnav {
-margin-top: 0px;
-}
-#hovertext {
-    z-index: 0;
-    top:0;
-    right:0;
-}
 body {
-background: lightblue;
-font-family: cursive;
-min-height: 100%;
-
+  background: lightblue;
+  font-family: cursive;
 }
 h1 {
-text-align: center;
-font-family: cursive;
-text-decoration: underline;
-text-decoration-color: red;
-color: red;
-text-shadow: -1px 1px;
-font-size: 45px;
-font-weight: 900;
+  text-align: center;
+  font-family: cursive;
+  text-decoration: underline;
+  text-decoration-color: red;
+  color: red;
+  text-shadow: -1px 1px;
+  font-size: 45px;
+  font-weight: 900;
 }
 h3 {
-font-size: 18px;
-color: #2107fa;
+  font-size: 18px;
+  color: #2107fa;
 }
 p {
-font-size: 15px;
+  font-size: 15px;
 
 }
 nav {
-background-color: #333;
-overflow: hidden;
+  background-color: #333;
+  overflow: hidden;
 }
 
 h6 {
-font-weight: 100;
+  font-weight: 100;
 }
 h5 {
-font-weight: 500;
+  font-weight: 500;
 }
 img {
-display: block;
-margin-left: auto;
-margin-right: auto;
-width: 50%;
-}
-.menu-icon {
-width: 35px;
-height: 5px;
-background-color: black;
-margin: 6px 0;
-}
-#topNavBar {
-position: -webkit-sticky;
-position: sticky;
-top: 0;
-padding: 0px;
-font-size: 25px;
-margin: 0px;
-left: 0px;
-text-align: right;
-}
-.navlink {
-text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
 nav {
-text-align: center;
-}
-/* The side navigation menu */
-.sidenav {
-height: 100%; /* 100% Full-height */
-width: 0; /* 0 width - change this with JavaScript */
-position: fixed; /* Stay in place */
-z-index: 1; /* Stay on top */
-top: 0; /* Stay at the top */
-left: 0;
-background-color: #111; /* Black*/
-overflow-x: hidden; /* Disable horizontal scroll */
-padding-top: 60px; /* Place content 60px from the top */
-transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
-}
+        background-color: #3c3c3c;
+        padding: 10px 20px;
+        text-align: center;
+      }
 
-/* The navigation menu links */
-.sidenav a {
-padding: 8px 8px 8px 32px;
-text-decoration: none;
-font-size: 25px;
-color: #818181;
-display: block;
-transition: 0.3s;
-}
+      ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
 
-/* When you mouse over the navigation links, change their color */
-.sidenav a:hover {
-color: #f1f1f1;
-}
+      li {
+        display: inline-block;
+      }
+      .nav-link {
+        color: #ffffff;
+        display: block;
+        font-weight: bold;
+        padding: 10px;
+        text-transform: uppercase;
+      }
+      /* The colors for each link */
+      .nav-home {
+        background-color: red;
+      }
+      .nav-aboutUs {
+        background-color: purple;
+      }
+      .nav-nuclearFission {
+        background-color: #03a9f4;
+      }
 
-/* Position and style the close button (top right corner) */
-.sidenav .closebtn {
-position: absolute;
-top: 0;
-right: 25px;
-font-size: 36px;
-margin-left: 50px;
-}
-#main {
-transition: margin-left .5s;
-padding: 20px;
-}
-@media screen and (max-height: 450px) {
-.sidenav {padding-top: 15px;}
-.sidenav a {font-size: 18px;}
-}
-.navlink {
-margin-top: 40px;
-padding-top:40px;
-}
-.sections {
-  scroll-margin-top: 25px;
-}
+      .nav-nuclearFusion {
+        background-color: #4caf50;
+      }
+
+      .nav-workCited {
+        background-color: #FFAE42;
+      }
   </style>
   <body>
-      <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="#">Home</a>
-        <a href="#">About Us</a>
-        <a href="#">Nuclear Fission</a>
-        <a href="#">Nuclear Fusion</a>
-      </div>
-  <p id="hovertext">hover at top for page and link menu</p>
+
 
   <div id="main">
     <section id="title" class="sections">
@@ -214,65 +140,5 @@ padding-top:40px;
     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
   </div>
   </body>
-  <script>function openNav() {
-    document.getElementById("mySidenav").style.width = "250px";
-    document.getElementById("main").style.marginLeft = "250px";
-    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
-}
-function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-    document.getElementById("main").style.marginLeft = "0";
-    document.body.style.backgroundColor = "lightblue";
-}
-function scrollcheck(){
-  var title = document.getElementById("title").offsetTop;
-var section1 = document.getElementById("intro").offsetTop;
-var imgsection = document.getElementById("image").offsetTop;
-var section2 = document.getElementById("nukes").offsetTop;
-var section3 = document.getElementById("uses").offsetTop;
-var section4 = document.getElementById("issues").offsetTop;
-var section5 = document.getElementById("emc").offsetTop;
-var section6 = document.getElementById("extra").offsetTop;
-    const boxes = document.querySelectorAll('.navlink');
-    var scrollTop = (window.pageYOffset !== undefined) ? window.pageYOffset+20 : (document.documentElement || document.body.parentNode || document.body).scrollTop+20;
-    if(scrollTop+10 > section1 && scrollTop+10 < section2){
-        boxes.forEach(box => {
-            box.style.color = 'blue';
-        });
-        document.getElementsByClassName("navlink")[1].style.color = "#FFFFFF";
-    }
-    else if(scrollTop +10 > section2 && scrollTop+10  < section3){
-        boxes.forEach(box => {
-            box.style.color = 'blue';
-        });
-        document.getElementsByClassName("navlink")[2].style.color = "#FFFFFF";
-    }
-    else if(scrollTop+10 > section3 && scrollTop+10 < section4){
-        boxes.forEach(box => {
-            box.style.color = 'blue';
-        });
-        document.getElementsByClassName("navlink")[3].style.color = "#FFFFFF";
-    } 
-    else if(scrollTop+10 > section4 && scrollTop+10 < section5){
-        boxes.forEach(box => {
-            box.style.color = 'blue';
-        });
-        document.getElementsByClassName("navlink")[4].style.color = "#FFFFFF";
-    }
-    else if(scrollTop+10 > section5 && scrollTop+10 < section6){
-        boxes.forEach(box => {
-            box.style.color = 'blue';
-        });
-        document.getElementsByClassName("navlink")[5].style.color = "#FFFFFF";
-    }
-    else if(scrollTop+10 > section5 ){
-        boxes.forEach(box => {
-            box.style.color = 'blue';
-        });
-        document.getElementsByClassName("navlink")[6].style.color = "#FFFFFF";
-    }
-    setTimeout(scrollcheck, 10);
-}
-scrollcheck();</script>
 
 </html>
