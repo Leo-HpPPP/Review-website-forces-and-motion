@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Work Cited</title>
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+    <nav>
+      <li><a href="index.html" class="nav-link nav-home">Home</a></li>
+      <li><a href="aboutUs.html" class="nav-link nav-aboutUs">About Us</a></li>
+      <li><a href="nuclearFission.html" class="nav-link nav-nuclearFission">Nuclear Fission</a></li>
+      <li><a href="nuclearFusion.html" class="nav-link nav-nuclearFusion">Nuclear Fusion</a></li>
+      <li><a href="workCited.html" class="nav-link nav-workCited">Work Cited</a></li>
+    </nav>
+    <style>
+      nav {
+        background-color: #3c3c3c;
+        padding: 10px 20px;
+        text-align: center;
+      }
+
+      ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      li {
+        display: inline-block;
+      }
+      .nav-link {
+        color: #ffffff;
+        display: block;
+        font-weight: bold;
+        padding: 10px;
+        text-transform: uppercase;
+      }
+      /* The colors for each link */
+      .nav-home {
+        background-color: red;
+      }
+      .nav-aboutUs {
+        background-color: purple;
+      }
+      .nav-nuclearFission {
+        background-color: #03a9f4;
+      }
+
+      .nav-nuclearFusion {
+        background-color: #4caf50;
+      }
+
+      .nav-workCited {
+        background-color: #FFAE42;
+      }
+    </style>
+    <h1>Work Cited</h1>
+    <hr>
+    <h3>Nuclear Fission Work Cited</h3>
+    <ol>
+      <li>Office of Nuclear Energy. “Fission and Fusion: What Is the Difference?” Energy.gov, 1 Apr. 2021, www.energy.gov/ne/articles/fission-and-fusion-what-difference#:~:text=Fission%20occurs%20when%20a%20neutron.</li>
+      <hr>
+      <li>Wikipedia Contributors. “Nuclear Fission.” Wikipedia, Wikimedia Foundation, 18 Mar. 2019, en.wikipedia.org/wiki/Nuclear_fission.</li>
+      <hr>
+      <li>Perkowitz, Sidney. “E = Mc^2 | Equation, Explanation, & Proof.” Encyclopædia Britannica, 22 Feb. 2018, www.britannica.com/science/E-mc2-equation.</li>
+      <hr>
+      <li></li>
+    </ol>
+  </body>
+</html>
