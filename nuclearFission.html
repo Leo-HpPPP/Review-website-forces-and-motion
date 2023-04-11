@@ -4,21 +4,109 @@
     <link rel="stylesheet" href="index.css">
   </head>
   <body>
-      <nav>
-      <li><a href="index.html" class="nav-link nav-home">Home</a></li>
-      <li><a href="aboutUs.html" class="nav-link nav-aboutUs">About Us</a></li>
-      <li><a href="background.html" class="nav-link nav-background">Background info</a></li>
-      <li><a href="nuclearFission.html" class="nav-link nav-nuclearFission">Nuclear Fission</a></li>
-      <li><a href="nuclearFusion.html" class="nav-link nav-nuclearFusion">Nuclear Fusion</a></li>
-      <li><a href="workCited.html" class="nav-link nav-workCited">Work Cited</a></li>
-    </nav>
-    <style>
-      nav {
-        background-color: #3c3c3c;
-        padding: 10px 20px;
-        text-align: center;
-      }
+  <div id="navwrapper">
+  <nav id="topNav">
+    <li><a href="index.html" class="nav-link nav-home">Home</a></li>
+    <li><a href="aboutUs.html" class="nav-link nav-aboutUs">About Us</a></li>
+    <li><a href="background.html" class="nav-link nav-background">Background info</a></li>
+    <li><a href="nuclearFission.html" class="nav-link nav-nuclearFission">Nuclear Fission</a></li>
+    <li><a href="nuclearFusion.html" class="nav-link nav-nuclearFusion">Nuclear Fusion</a></li>
+    <li><a href="workCited.html" class="nav-link nav-workCited">Work Cited</a></li>
+  </nav>
+  </div>
+  <style>
+body {
+  background: lightblue;
+  font-family: cursive;
+}
+h1 {
+  text-align: center;
+  font-family: cursive;
+  text-decoration: underline;
+  text-decoration-color: red;
+  color: red;
+  text-shadow: -1px 1px;
+  font-size: 45px;
+  font-weight: 900;
+}
+h3 {
+  font-size: 18px;
+  color: #2107fa;
+}
+p {
+  font-size: 15px;
 
+}
+nav {
+  background-color: #333;
+  overflow: hidden;
+}
+
+h6 {
+  font-weight: 100;
+}
+h5 {
+  font-weight: 500;
+}
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+.nav-background {
+  background-color: #00f8ff;
+}
+.sections {
+  transition-property: background;
+  transition-duration: 1s;
+}
+#intro {
+  transition-property: background;
+  transition-duration: 1s;
+}
+#nukes {
+  transition-property: background;
+  transition-duration: 1s;
+}
+#uses {
+  transition-property: background;
+  transition-duration: 1s;
+}
+#issues {
+  transition-property: background;
+  transition-duration: 1s;
+}
+#emc {
+  transition-property: background;
+  transition-duration: 1s;
+}
+#extra {
+  transition-property: background;
+  transition-duration: 1s;
+}
+#navwrapper {
+position: -webkit-sticky;
+position: sticky;
+top: 0;
+overflow: auto;
+white-space: nowrap;
+height: auto;
+}
+nav {
+      position: -webkit-sticky;
+      position: sticky;
+      top: 0;
+      background-color: #3c3c3c;
+      padding: 10px 20px;
+      text-align: center;
+      margin-top: -52px;
+      transition: 1s;
+      z-index: 1;
+      }
+#navwrapper:hover nav {
+  margin-top: 0px;
+}
       ul {
         list-style: none;
         margin: 0;
@@ -35,6 +123,7 @@
         padding: 10px;
         text-transform: uppercase;
       }
+      /* The colors for each link */
       .nav-home {
         background-color: red;
       }
@@ -52,40 +141,113 @@
       .nav-workCited {
         background-color: #FFAE42;
       }
-      .nav-background {
-        background-color: #00f8ff;
-      }
-    <br>
+  </style>
+  <body>
+  <div id="main">
+    <section id="title" class="sections">
     <h1>Nuclear Fission</h1>
     <h2 align="center">By Neveel Chheda</h2>
     <hr>
+    </section>
+    <section id="intro" class="sections">
     <h3>Introduction</h3>
     <p>Nuclear fission happens when a neutron slams into another atom, forcing it to split into two smaller atoms. These two atoms are caled fission products. There are more neutrons that are produced, creating a chain reaction. When this happens it releases a lot of energy.</p>
     <hr>
-    <img src="nerdlololol.png" alt="Nuclear Fission" length="50%" width="50%">
+    </section>
+    <section id="image">
+    <img src="nerdlolololol.png" alt="Nuclear Fission" length="50%" width="50%">
     <hr>
+    </section>
+    <section id="nukes" class="sections">
     <h3>Nuclear fission in nukes</h3>
     <p>Scientists put the ingridents to create a nuclear fission scenario in nukes, and when the nuke is detonated, the fission occurs releasing massive amounts of energy in the form of x-ray's and gamma rays, which make a lot of heat. It also creates pressure for nuclear fusion.</p>
     <hr>
+    </section>
+    <section id="uses" class="sections">
     <h3>Uses of nuclear fission</h3>
     <p>Nuclear fission is usually used in nuclear power plants to create electricity. This energy produced, which fission creates, is used to do things that need electricity. It can also power turbines to generate more electricity, in the way that windmills create electricity.</p>
     <hr>
+    </section>
+    <section id="issues" class="sections">
     <h3>Environmental issues</h3>
     <p>Nuclear fission produces nuclear waste, which is deadly. It is hard to dispose of this waste, creating problems. If there is a nuclear meltdown, many people will die, in painful ways.</p>
     <hr>
+    </section>
+    <section id="emc" class="sections">
     <h3>E=MC^2</h3>
-    <p>You may have heard of this equation, but what does it really mean? <br> </p>
+    <p>You may have heard of this equation but what does it really mean? <br> </p>
     <p>The "E" stands for energy. <br></p>
     <p>The m stands for mass. <br></p>
     <p>The c stands for the speed of light. <br></p>  
     <p>This equation may seem simple, but it is much more complex than you might think. Basically, the equation says that anything in matter can be converted into energy. It states that mass, as well as energy, are the same physical entity, and they can be changed into one another.</p>
     <br>
-    <p>It states that the increased relativistic mass of a body, multiplied by the speed of light squared, is equal to the kinetic energy of that object. This equation explains why nuclear fission creates so much energy.</p>
+    <p>It states that the increased relativistic mass of a body, multiplied by the speed of light squared, is equal to the kinetic energy of that object. The equation explains the reason on why nuclear fission emits so much energy.</p>
     <hr>
+    </section>
+    <section id="extra" class="sections">
     <h5>Just so you know, the increased relativistic mass means that as the speed of an object increases, its observed mass increases, an as an object approches the speed of light, its observed mass becomes infinitely large.</h5>
-    <h5>As an object approaches the speed of light, its kinetic energy becomes infinite, meaning that the mass of an object also is infinite.<br></h5>
-    <h5>Also, if you are now thinking that light's mass is infinite, it is not. Since light is composed of photons, which have no mass, the mass of light is zero.</h5>
-    <h6>This concept is very difficult to grasp and I am also too dumb to truly understand it, so don't think bad of yourselves if you do not understand it.</h6>
+    <h5>As an object approaches the speed of light, its kinetic energy becomes infinite, meaning that the mass of an object also is infinite.</h5>
+    <h6>This concept is very difficult to grasp and I am also too dumb to truly understand it, so don't think bad of yourselves if you do not understand it/.</h6>
     <hr>
+    </section>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  </div>
   </body>
+<script>
+  function scrollcheck(){
+  var title = document.getElementById("title").offsetTop;
+var section1 = document.getElementById("intro").offsetTop;
+var imgsection = document.getElementById("image").offsetTop;
+var section2 = document.getElementById("nukes").offsetTop;
+var section3 = document.getElementById("uses").offsetTop;
+var section4 = document.getElementById("issues").offsetTop;
+var section5 = document.getElementById("emc").offsetTop;
+var section6 = document.getElementById("extra").offsetTop;
+    const boxes = document.querySelectorAll('.sections');
+    var scrollTop = (window.pageYOffset !== undefined) ? window.pageYOffset+140 : (document.documentElement || document.body.parentNode || document.body).scrollTop+140;
+    if(scrollTop+10 > section1 && scrollTop+10 < section2){
+        boxes.forEach(box => {
+            box.style.background = 'lightblue';
+            box.style.fontSize = "15px";
+        });
+        document.getElementsByClassName("sections")[1].style.background = "#63b4cf";
+    
+        document.getElementById("intro").style.fontSize = "70px";
+
+    }
+    else if(scrollTop +10 > section2 && scrollTop+10  < section3){
+        boxes.forEach(box => {
+            box.style.background = 'lightblue';
+        });
+        document.getElementsByClassName("sections")[2].style.background = "#63b4cf";
+    }
+    else if(scrollTop+10 > section3 && scrollTop+10 < section4){
+        boxes.forEach(box => {
+            box.style.background = 'lightblue';
+        });
+        document.getElementsByClassName("sections")[3].style.background = "#63b4cf";
+    } 
+    else if(scrollTop+10 > section4 && scrollTop+10 < section5){
+        boxes.forEach(box => {
+            box.style.background = 'lightblue';
+        });
+        document.getElementsByClassName("sections")[4].style.background = "#63b4cf";
+    }
+    else if(scrollTop+10 > section5 && scrollTop+10 < section6){
+        boxes.forEach(box => {
+            box.style.background = 'lightblue';
+        });
+        document.getElementsByClassName("sections")[5].style.background = "#63b4cf";
+    }
+    else if(scrollTop+10 > section5 ){
+        boxes.forEach(box => {
+            box.style.background = 'lightblue';
+        });
+        document.getElementsByClassName("sections")[6].style.background = "#63b4cf";
+    }
+    setTimeout(scrollcheck, 10);
+}
+scrollcheck();
+</script>
+</body>
 </html>
