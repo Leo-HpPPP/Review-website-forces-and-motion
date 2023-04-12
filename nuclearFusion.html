@@ -1,19 +1,16 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Nuclear Fusion</title>
+    <div id="navwrapper">
+      <nav id="topNav">
+        <li><a href="index.html" class="nav-link nav-home">Home</a></li>
+        <li><a href="aboutUs.html" class="nav-link nav-aboutUs">About Us</a></li>
+        <li><a href="nuclearFission.html" class="nav-link nav-nuclearFission">Nuclear Fission</a></li>
+        <li><a href="nuclearFusion.html" class="nav-link nav-nuclearFusion">Nuclear Fusion</a></li>
+        <li><a href="workCited.html" class="nav-link nav-workCited">Work Cited</a></li>
+      </nav>
+      </div>
   </head>
-  <body>
-   <div id="navwrapper">
-  <nav id="topNav">
-    <li><a href="index.html" class="nav-link nav-home">Home</a></li>
-    <li><a href="aboutUs.html" class="nav-link nav-aboutUs">About Us</a></li>
-    <li><a href="background.html" class="nav-link nav-background">Background info</a></li>
-    <li><a href="nuclearFission.html" class="nav-link nav-nuclearFission">Nuclear Fission</a></li>
-    <li><a href="nuclearFusion.html" class="nav-link nav-nuclearFusion">Nuclear Fusion</a></li>
-    <li><a href="workCited.html" class="nav-link nav-workCited">Work Cited</a></li>
-  </nav>
-  </div>
   <style>
 body {
   background: lightblue;
@@ -54,34 +51,7 @@ img {
   margin-right: auto;
   width: 50%;
 }
-.nav-background {
-  background-color: #00f8ff;
-}
 .sections {
-  transition-property: background;
-  transition-duration: 1s;
-}
-#intro {
-  transition-property: background;
-  transition-duration: 1s;
-}
-#nukes {
-  transition-property: background;
-  transition-duration: 1s;
-}
-#uses {
-  transition-property: background;
-  transition-duration: 1s;
-}
-#issues {
-  transition-property: background;
-  transition-duration: 1s;
-}
-#emc {
-  transition-property: background;
-  transition-duration: 1s;
-}
-#extra {
   transition-property: background;
   transition-duration: 1s;
 }
@@ -142,8 +112,109 @@ nav {
         background-color: #FFAE42;
       }
   </style>
-    <h1 align = center>Nuclear Fusion</h1>
-    <h2 align = center>By: Tiger Zhao</h2>
+  <body>
+  <div id="main">
+    <section id="title" class="sections">
+    <h1>Nuclear Fusion</h1>
     <hr>
+    </section>
+    <section id="intro" class="sections">
+    <h3>Introduction</h3>
+    <p>Nuclear fusion is the opposite of fusion. Instead of an atom splitting, it is when two nuclei "fuse" together, hence the name. It is very powerful and releases more energy than fission.</p>
+    <hr>
+    </section>
+    <section id="image">
+    <img src="nerdlololol2.png" alt="Nuclear Fission" length="50%" width="50%">
+    <hr>
+    </section>
+    <section id="thermonuclear" class="sections">
+    <h3>Nuclear fusion in thermonuclear weapons</h3>
+    <p>After the fission bomb proved devastating, scientists around the world tried to produce a more deadly weapon using fusion. The United States were the first to test a thermonuclear weapon in Operation Ivy. Thermonuclear bombs have 2 stages: First an implosion happens, powered by plutonium/uranium and the inside is filled with hydrogen fuel (normally tritium, an isotope of hydrogen). Second is the more powerful fusion. The fission explosion releases lots of gamma rays and x-rays, which are channeled down into the fusion compartment. Foam surrounds the fuel, normally lithium deuteride (formed by fusing deuterium and lithium). The foam melts into plasma, which causes a “sparkplug”, a casing of the fuel, to release explosive energy. The tritium then fuses with the deuterium (fusion) to form helium and more neutrons. These neutrons go and cause more fission reactions, further pressuring the fuel, causing even more fusion reactions. This is thermonuclear fusion, different from normal fusion because it turns into plasma and the high temperature makes particles fuse with each other.
+    </p>
+    <hr>
+    </section>
+    <section id="uses" class="sections">
+    <h3>Uses of nuclear fusion</h3>
+    <p>Humans have not really harnessed the power of nuclear fusion yet, but stars are powered by this force. Our sun runs on nulcear fusion. Humans have only used fusion for thermonuclear weapons, but efforts are underway to use fusion for power plants.</p>
+    <hr>
+    </section>
+    <section id="danger" class="sections">
+    <h3>Dangers</h3>
+    <p>Nuclear fusion, despite being promising for energy production, poses a threat to humanity. With thermonuclear weapons around the world, all it takes is a couple for a massive war to start. This war will be on a scale never seen before, utilizing thermonuclear weapons to turn the world into a wasteland. Like with all things, fusion must be handled with caution if we want a bright future.</p>
+    <hr>
+    </section>
+    <section id="forces" class="sections">
+    <h3>Driving Forces</h3>
+   <p>There are many forces at work when nuclear fusion occurs, but the most prominent one is the nuclear force. Both the strong and weak force play a major part in fusion. When the particles get close enough, the attractive nuclear force will outweigh the repelling force and allows the two nuclei to fuse.<br> </p>
+   <hr>
+
+    </section>
+    <section id="extra" class="sections">
+      <h3>Extra</h3>
+    <p>Operation Ivy, the first thermonuclear test, consisted of two thermonuclear bomb detonations. They were detonated in Enewetak Atoll in the Pacific Proving Ground in the Marshall Islands.</p>
+    <hr>
+    <p>The Sun will run out of fuel and die in approximately 10 billion years.</p>
+    <hr>
+    <p>Nuclear fusion releases about four million times more energy than coal and four times more energy that fission, assuming they are of equal masses.</p>
+    <hr>
+    </section>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  </div>
+  <body>
+  <script>
+    function scrollcheck(){
+    var title = document.getElementById("title").offsetTop;
+  var section1 = document.getElementById("intro").offsetTop;
+  var imgsection = document.getElementById("image").offsetTop;
+  var section2 = document.getElementById("thermonuclear").offsetTop;
+  var section3 = document.getElementById("uses").offsetTop;
+  var section4 = document.getElementById("danger").offsetTop;
+  var section5 = document.getElementById("forces").offsetTop;
+  var section6 = document.getElementById("extra").offsetTop;
+      const boxes = document.querySelectorAll('.sections');
+      var scrollTop = (window.pageYOffset !== undefined) ? window.pageYOffset+140 : (document.documentElement || document.body.parentNode || document.body).scrollTop+140;
+      if(scrollTop+10 > section1 && scrollTop+10 < section2){
+          boxes.forEach(box => {
+              box.style.background = 'lightblue';
+              box.style.fontSize = "15px";
+          });
+          document.getElementsByClassName("sections")[1].style.background = "#63b4cf";
+      
+  
+      }
+      else if(scrollTop +10 > section2 && scrollTop+10  < section3){
+          boxes.forEach(box => {
+              box.style.background = 'lightblue';
+          });
+          document.getElementsByClassName("sections")[2].style.background = "#63b4cf";
+      }
+      else if(scrollTop+10 > section3 && scrollTop+10 < section4){
+          boxes.forEach(box => {
+              box.style.background = 'lightblue';
+          });
+          document.getElementsByClassName("sections")[3].style.background = "#63b4cf";
+      } 
+      else if(scrollTop+10 > section4 && scrollTop+10 < section5){
+          boxes.forEach(box => {
+              box.style.background = 'lightblue';
+          });
+          document.getElementsByClassName("sections")[4].style.background = "#63b4cf";
+      }
+      else if(scrollTop+10 > section5 && scrollTop+10 < section6){
+          boxes.forEach(box => {
+              box.style.background = 'lightblue';
+          });
+          document.getElementsByClassName("sections")[5].style.background = "#63b4cf";
+      }
+      else if(scrollTop+10 > section5 ){
+          boxes.forEach(box => {
+              box.style.background = 'lightblue';
+          });
+          document.getElementsByClassName("sections")[6].style.background = "#63b4cf";
+      }
+      setTimeout(scrollcheck, 10);
+  }
+  scrollcheck();
+  </script>
   </body>
 </html>
