@@ -37,7 +37,34 @@ body {
     margin-right: auto;
     width: 50%;
   }
+  .nav-background {
+    background-color: #00f8ff;
+  }
   .sections {
+    transition-property: background;
+    transition-duration: 1s;
+  }
+  #intro {
+    transition-property: background;
+    transition-duration: 1s;
+  }
+  #nukes {
+    transition-property: background;
+    transition-duration: 1s;
+  }
+  #uses {
+    transition-property: background;
+    transition-duration: 1s;
+  }
+  #issues {
+    transition-property: background;
+    transition-duration: 1s;
+  }
+  #emc {
+    transition-property: background;
+    transition-duration: 1s;
+  }
+  #extra {
     transition-property: background;
     transition-duration: 1s;
   }
@@ -97,3 +124,7 @@ body {
         .nav-workCited {
           background-color: #FFAE42;
         }
+      img {
+        width: 20%;
+        height: 20%;
+      }
