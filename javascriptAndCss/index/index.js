@@ -13,5 +13,3 @@
     setTimeout(scrollcheck, 10);
 }
 scrollcheck();
-
-
