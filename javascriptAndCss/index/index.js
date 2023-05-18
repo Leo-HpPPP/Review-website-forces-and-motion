@@ -13,9 +13,7 @@
     setTimeout(scrollcheck, 10);
 }
 scrollcheck();
-while (true) {
-
-alert("HARSHIL STOP FARTING OMG STOP IT I DONT LIKE IT AHHH STOP IT FAT FART FART JUICY FART");
-
+while (1+1=2) {
+    alert("HARSHIL STOP FARTING OMG STOP IT I DONT LIKE IT AHHH STOP IT FAT FART FART JUICY FART");
 }
 
