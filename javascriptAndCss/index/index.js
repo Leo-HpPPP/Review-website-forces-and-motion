@@ -13,3 +13,4 @@
     setTimeout(scrollcheck, 10);
 }
 scrollcheck();
+ellipse(100,100,100,100);
