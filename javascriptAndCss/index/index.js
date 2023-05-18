@@ -1,4 +1,5 @@
-    function scrollcheck(){
+i = 9   
+function scrollcheck(){
   var title = document.getElementById("main").offsetTop;
     const boxes = document.querySelectorAll('.sections');
     var scrollTop = (window.pageYOffset !== undefined) ? window.pageYOffset+140 : (document.documentElement || document.body.parentNode || document.body).scrollTop+140;
@@ -14,3 +15,6 @@
 }
 scrollcheck();
 ellipse(100,100,100,100);
+while (i < 10) {
+    alert("Neveel Chheda and Yajat Pant try not to be sped challenge for 24 hours. REAL NOT FAKE. IMPOSSIBLE   NEED HELP NOW!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
+}
