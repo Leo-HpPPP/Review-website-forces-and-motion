@@ -31,7 +31,31 @@
     <img src="..\images\dinga.png" alt="Nuclear Fission" height="25%" width="25%">
     <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
     <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
-    <model-viewer id="mv-demo" shadow-intensity="1" src="https://lp-hp.github.io/Science-Scholars-Project/images/nuclear_fission.glb" alt="A 3D model of fission" auto-rotate camera-controls></model-viewer>
+    <div id='model'><model-viewer id="mv-demo" height = 500px shadow-intensity="1" src="https://lp-hp.github.io/Science-Scholars-Project/images/nuclear_fission.glb" alt="A 3D model of fission" auto-rotate camera-controls></model-viewer></div>
+    <style>
+      .model {
+        text-align: center;
+        margin: 0 auto;
+        margin-left:auto;
+        margin-right:auto;
+        height: 500px;
+        width: 500px;
+        display: block;
+    margin-left: auto;
+    margin-right: auto;
+      }
+      .mv-demo {
+        margin: 0 auto;
+        height: 500px;
+        width:500px;
+        margin-left:auto;
+        margin-right:auto;
+        float: auto;
+        display: block;
+    margin-left: auto;
+    margin-right: auto;
+      }
+    </style>
     <hr>
     </section>
     <section id="nukes" class="sections">
